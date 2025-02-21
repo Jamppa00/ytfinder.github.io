@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	    <meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	    <title>Get YouTube Video by Keyword</title>
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-	    <style>
-	    .paginate {
-	        margin-right: 5px;
-	    }
-	    li {
-	        display: inline-block;
-	    }
-	    </style>
-	</head>
-    <body>
-        <form id="yt-search">
-            <p><input type="text" id="keyword" placeholder="Search keyword" required></p>
-            <p><input type="number" id="maxresult" placeholder="Number of videos" min="1" max="75" required></p>
-            <p>
-	            <select id="order-input" required>
-	                <option value="">--SELECT ORDER--</option>
-	                <option value="date">Date</option>
-	                <option value="rating">Rating</option>
-	                <option value="relevance">Relevance</option>
-	                <option value="title">Title</option>
-	                <option value="viewCount" selected>View Count</option>
-	            </select>
-	        </p>
-	        <p>
-	            <input type="submit" value="Submit">
-	        </p>
-        </form>
-
-        <div id="videoListContainer"></div>
-	  
-	    <script src="https://apis.google.com/js/api.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-	    <script src="js/custom.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YTFINDER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="videosearch.html">Video Finder</a>
+        <a href="randomvideo.html">Random Video</a>
+    </div>
+    <div class="container">
+        <h1>Welcome to YTFINDER</h1>
+        <p>Find YouTube videos easily!</p>
+    </div>
+</body>
 </html>
