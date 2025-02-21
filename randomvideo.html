@@ -3,11 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Random YouTube Video</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 50px;
+        }
+    </style>
 </head>
 <body>
-    <button onclick="fetchRandomVideo()">Play Random Video</button>
-    <iframe id="ytPlayer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="video_finder.html">Video Finder</a>
+        <a href="random_video.html">Random Video</a>
+    </div>
+    <div class="container">
+        <h1>Random YouTube Video</h1>
+        <button onclick="fetchRandomVideo()">Play Random Video</button>
+        <br><br>
+        <iframe id="ytPlayer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
 
     <script>
         const API_KEY = 'AIzaSyCLQ1UGKlP9-AJFyCRdleKYR9vakrKV1Ok'; // Replace with your API key
